@@ -29,7 +29,7 @@ public class Expense {
         this.category=category;
         this.date="";
     }
-    void display()
+    public void display()
         {
             System.out.println("Expense id:"+id);
             System.out.println("Expense title:"+title);
@@ -63,11 +63,11 @@ public class Expense {
         }
         public void setAmount(double amount)
         {
-            if(Amount<=0)
+            if(amount<=0)
             {
                 System.out.println("invalid amount");
             } else {
-                this.amount=Amount;
+                this.amount=amount;
             }
             }  public double getAmount() {
                 return amount;
@@ -85,13 +85,13 @@ public class Expense {
             {
                 return category;
             }
-            public void setDate(String setDate)
+            public void setDate(String Date)
             {
-                if(setDate==null || setDate.isEmpty()){
+                if(Date==null || Date.isEmpty()){
                     System.out.println("invalid date");
 
                 } else {
-                    this.date=setDate;
+                    this.date=Date;
                 }
             }
                 public String getDate()
