@@ -116,6 +116,7 @@ public class Main {
                     else{ 
                         System.out.println("enter the expense id you want to update");
                         int updateId=sc.nextInt();
+                        sc.nextLine();
                         boolean found=false;
                         for(int i=0;i<count;i++)
                         {
@@ -124,7 +125,6 @@ public class Main {
                                 found=true;
                                 System.out.println("enter new title");
                                 String newTitle=sc.nextLine();
-                                sc.nextLine();
                                 expenses[i].setTitle(newTitle);
                                 System.out.println("enter new amount");
                                 double newAmount=sc.nextDouble();
